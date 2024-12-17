@@ -3,11 +3,12 @@
 # HyprV4 By SolDoesTech - https://www.youtube.com/@SolDoesTech
 # License..? - You may copy, edit and ditribute this script any way you like, enjoy! :)
 
-# The follwoing will attempt to install all needed packages to run Hyprland
+# The following will attempt to install all needed packages to run Hyprland
 # This is a quick and dirty script there are some error checking
 # IMPORTANT - This script is meant to run on a clean fresh Arch install on physical hardware
 
-# Define the software that would be inbstalled 
+# Define the software that would be installed
+
 #Need some prep work
 prep_stage=(
     qt5-wayland 
@@ -71,7 +72,7 @@ install_stage=(
     noto-fonts-emoji 
     lxappearance 
     xfce4-settings
-    nwg-look-bin
+    nwg-look
     sddm
 )
 
@@ -186,7 +187,7 @@ fi
 
 #### Check for package manager ####
 if [ ! -f /sbin/yay ]; then  
-    echo -en "$CNT - Configuering yay."
+    echo -en "$CNT - Configuring yay."
     git clone https://aur.archlinux.org/yay.git &>> $INSTLOG
     cd yay
     makepkg -si --noconfirm &>> ../$INSTLOG &
