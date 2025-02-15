@@ -71,7 +71,7 @@ install_stage=(
     noto-fonts-emoji 
     lxappearance 
     xfce4-settings
-    nwg-look-bin
+    nwg-look $changed from nwg-look-bin to prevent crashes
     sddm
 )
 
