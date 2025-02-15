@@ -28,15 +28,6 @@ prep_stage=(
     pacman-contrib
 )
 
-#software for nvidia GPU only
-nvidia_stage=(
-    linux-headers 
-    nvidia-dkms 
-    nvidia-settings 
-    libva 
-    libva-nvidia-driver-git
-)
-
 #the main packages
 install_stage=(
     kitty 
@@ -71,7 +62,7 @@ install_stage=(
     noto-fonts-emoji 
     lxappearance 
     xfce4-settings
-    nwg-look $changed from nwg-look-bin to prevent crashes
+    nwg-look #changed from nwg-look-bin to prevent crashes
     sddm
 )
 
